@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import newBlockImage from './newblocks/newblocks.png';
+import newBlockButtonImage from './newblocks/newblocks-small.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,26 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    }
+    ,
+    {
+        name: 'For Unity', //タイトル
+        extensionId: 'newblocks', //ID
+        collaborator: 'Kirato', //作者
+        iconURL: newBlockImage, //でかい画像
+        insetIconURL: newBlockButtonImage, //小さい画像
+        description: (
+            <FormattedMessage
+                defaultMessage="Scratch for Unity!"  //説明文
+                description="my block"
+                id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo',
+
     }
 ];
