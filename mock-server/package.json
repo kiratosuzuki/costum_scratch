@@ -1,0 +1,12 @@
+{
+  "name": "mock-unity-server",
+  "version": "1.0.0",
+  "description": "Mock Unity WebSocket server for Scratch testing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.0.0"
+  }
+}

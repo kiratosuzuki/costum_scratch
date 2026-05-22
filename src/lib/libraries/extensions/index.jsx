@@ -49,6 +49,9 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import newBlockImage from './newblocks/newblocks.png';
 import newBlockButtonImage from './newblocks/newblocks-small.png';
 
+import turtlebotImage from './turtlebot/turtlebot.png';
+import newturtlebotImage from './turtlebot/turtlebot-small.png';
+
 export default [
     {
         name: (
@@ -333,6 +336,26 @@ export default [
                 defaultMessage="Scratch for Unity!"  //説明文
                 description="my block"
                 id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo',
+
+    },
+    {
+        name: 'For Unity Neo', //タイトル
+        extensionId: 'turtlebot', //ID
+        collaborator: 'Kirato', //作者
+        iconURL: turtlebotImage, //でかい画像
+        insetIconURL: newturtlebotImage, //小さい画像
+        description: (
+            <FormattedMessage
+                defaultMessage="Scratch for Unity!"  //説明文
+                description="my block"
+                id="gui.extension.turtlebot.description"
             />
         ),
         featured: true,
